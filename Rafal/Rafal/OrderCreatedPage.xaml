@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Rafal.Page1">
+    <ContentPage.Content>
+        <RelativeLayout >    
+            <Label x:Name="Title" Text="Order added to list"
+                   FontSize="Large"/>
+            <Label x:Name="Details"  Text="Details:" 
+                   RelativeLayout.YConstraint="{ConstraintExpression 
+                        Type=RelativeToView,
+                        ElementName=Title,
+                        Property=Height,
+                        Factor=1,
+                        Constant=20}"/>
+            <Label x:Name="ClientName"
+                   RelativeLayout.YConstraint="{ConstraintExpression 
+                        Type=RelativeToView,
+                        ElementName=Title,
+                        Property=Height,
+                        Factor=1,
+                        Constant=40}"/>
+            <Label x:Name="OrderName"
+                   RelativeLayout.YConstraint="{ConstraintExpression 
+                        Type=RelativeToView,
+                        ElementName=Title,
+                        Property=Height,
+                        Factor=1,
+                        Constant=120}"/>
+                   
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

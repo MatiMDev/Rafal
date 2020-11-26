@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Rafal.CreateOrderPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enter client name"/>
+            <Entry x:Name="clientName"/>
+            <Label Text="Enter order name (optional)"/>
+            <Entry x:Name="orderName"/>
+            <Label Text="Enter date of end of order"/>
+            <DatePicker x:Name="endDate"/>
+            <Label Text="Enter name"/>
+            <Entry x:Name="yourName"/>
+            <Button x:Name="submitButton" Text="Submit order" Clicked="submitButton_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
